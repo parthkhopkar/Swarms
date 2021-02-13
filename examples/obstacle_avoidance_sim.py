@@ -71,7 +71,7 @@ def simulation(args, _):
     env.add_goal(goal)
 
     for _ in range(args.boids):
-        position = np.random.uniform(-1, 1, 2)
+        position = np.random.uniform(-2, 2, 2)
         velocity = np.random.uniform(0, 0, 2)
 
         agent = Boid(position, velocity, ndim=2, vision=args.vision, size=args.size,
@@ -161,7 +161,7 @@ if __name__ == '__main__':
                         help='number of simulation steps')
     parser.add_argument('--instances', type=int, default=1,
                         help='number of simulation instances')
-    parser.add_argument('--dt', type=float, default=1/240,
+    parser.add_argument('--dt', type=float, default=(1/240)*6,
                         help='time resolution')
     parser.add_argument('--config', type=str, default='config/boid_vicsek_default.json',
                         help='path to config file')

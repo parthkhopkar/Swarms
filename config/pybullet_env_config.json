@@ -3,7 +3,7 @@
         "cohesion": 2e5,
         "separation": 2e5,
         "alignment": 2e5,
-        "obstacle_avoidance": 2e10,
-        "goal_steering": 2e10
+        "obstacle_avoidance": 2e15,
+        "goal_steering": 2e15
     }
 }
