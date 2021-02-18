@@ -63,16 +63,16 @@ def system_edges(obstacles, boids, vicseks):
 def simulation(args, _):
     np.random.seed()
 
-    region = (-100, 100, -100, 100)
+    region = (-20, 20, -20, 20)
 
     env = Environment2D(region)
 
-    goal = Goal(np.random.uniform(-40, 40, 2), ndim=2)
+    goal = Goal(np.random.uniform(-10, 10, 2), ndim=2)
     env.add_goal(goal)
 
     for _ in range(args.boids):
-        position = np.random.uniform(-80, 80, 2)
-        velocity = np.random.uniform(-15, 15, 2)
+        position = np.random.uniform(-20, 20, 2)
+        velocity = np.random.uniform(-0, 0, 2)
 
         agent = Boid(position, velocity, ndim=2, vision=args.vision, size=args.size,
                      max_speed=10, max_acceleration=5)
