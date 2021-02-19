@@ -4,7 +4,7 @@
         "separation": 2,
         "alignment": 0.2,
         "obstacle_avoidance": 2,
-        "goal_steering": 0.5
+        "goal_steering": 2
     },
     "vicsek": {
         "tau": 1.0,
