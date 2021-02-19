@@ -67,7 +67,7 @@ def simulation(args, _):
 
     env = Environment2D(region)
 
-    goal = Goal(np.random.uniform(-10, 10, 2), ndim=2)
+    goal = Goal(np.random.uniform(-20, 20, 2), ndim=2)
     env.add_goal(goal)
 
     for _ in range(args.boids):
