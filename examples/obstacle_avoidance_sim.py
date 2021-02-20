@@ -67,7 +67,7 @@ def simulation(args, _):
 
     env = Environment2D(region)
 
-    goal = Goal(np.random.uniform(-20, 20, 2), ndim=2)
+    goal = Goal(np.random.uniform(-10, 10, 2), ndim=2)
     env.add_goal(goal)
 
     for _ in range(args.boids):
@@ -95,7 +95,7 @@ def simulation(args, _):
 
     spheres = []
     for _ in range(args.obstacles):
-        sphere = random_obstacle(avg_boids_position, goal.position, 8)
+        sphere = random_obstacle(avg_boids_position, goal.position, 1.5)
         spheres.append(sphere)
         env.add_obstacle(sphere)
 
